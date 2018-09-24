@@ -10,7 +10,7 @@ export const createForm = (config = { id: "", class: "" }) => {
   // ie github-form-input if config.id === 'github-form'
 
   button.id = form.id + "-button";
-  button.innerText = "Submit";
+  button.innerText = "Click Me!!";
 
   // add your sub-elements to the parent
 
