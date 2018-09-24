@@ -1,0 +1,36 @@
+{
+  "name": "datehistory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development -w",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pranay21/DateHistory.git"
+  },
+  "author": "pranay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pranay21/DateHistory/issues"
+  },
+  "homepage": "https://github.com/Pranay21/DateHistory#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "install": "^0.12.1",
+    "npm": "^6.4.1",
+    "prettier": "^1.14.3",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
+}
