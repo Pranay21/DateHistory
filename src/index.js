@@ -9,10 +9,12 @@ form.addEventListener("submit", e => {
 
   fetchDayEvent()
     .then(repoObjs => {
+      const ul = document.createElement("ul");
       const answer = repoObjs.data.Births.map(repoItem => repoItem.text);
-      const para = document.createElement("p");
-      para.innerText = answer;
-      document.body.appendChild(para);
+      const li = document.createElement("li");
+      li.innerText = answer;
+      ul.appendChild(li);
+      document.body.appendChild(ul);
       return repoObjs.data.Births.map(repoItem => repoItem.text);
     })
     .then(console.log);
