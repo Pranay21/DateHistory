@@ -3,19 +3,20 @@ import { createForm } from "./createForm";
 import "./style.css";
 
 const form = createForm({ id: "date-form" });
+const ul = document.createElement("ul");
 
 form.addEventListener("submit", e => {
   e.preventDefault();
 
-  fetchDayEvent()
-    .then(repoObjs => {
-      const ul = document.createElement("ul");
-      const answer = repoObjs.data.Births.map(repoItem => repoItem.text);
+  fetchDayEvent().then(repoObjs => {
+    repoObjs.data.Births.map(repoItem => {
       const li = document.createElement("li");
-      li.innerText = answer;
+      //console.log(answer);
+      li.innerText = repoItem.text;
       ul.appendChild(li);
-      document.body.appendChild(ul);
-      return repoObjs.data.Births.map(repoItem => repoItem.text);
-    })
-    .then(console.log);
+    });
+    //return repoObjs.data.Births.map(repoItem => repoItem.text);
+  });
+  document.body.appendChild(ul);
+  //.then(console.log);
 });
