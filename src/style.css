@@ -1,19 +1,21 @@
 ul {
-  color: white;
+  color: black;
   list-style-type: square;
   list-style-position: inside;
 }
 body {
   text-align: center;
   font-family: verdana;
-  background-color: black;
   margin-top: 50px;
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
-  border: 10px solid white;
-  outline-style: double;
-  outline-color: yellow;
+  font-weight: bold;
+  grid-gap: 100px;
+  background-repeat: no-repeat, repeat;
+  background: url("history2.jpg");
+  filter: grayscale(10%);
+  background-repeat: repeat;
 }
 button {
   width: 30%;
@@ -22,7 +24,18 @@ button {
   margin: 8px 0;
   border-radius: 12px;
   box-sizing: border-box;
-  background-color: #008cba;
+  background-color: #11303a;
+  font-size: 20px;
+  font-style: bold;
+}
+button2 {
+  width: 30%;
+  font-style: bold;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background-color: #11303a;
   font-size: 20px;
   font-style: bold;
 }

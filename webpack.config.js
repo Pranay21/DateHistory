@@ -7,8 +7,17 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
   },
+
   module: {
     rules: [
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass?sourceMap"]
+      },
+      {
+        test: /\.jpg$/,
+        loader: "file-loader"
+      },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
