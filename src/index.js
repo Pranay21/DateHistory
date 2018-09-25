@@ -1,13 +1,23 @@
-import { fetchDayEvent } from "./history";
+import React from "react";
+import ReactDOM from "react-dom";
 import { createForm } from "./createForm";
-import { fetch } from "./fetch";
+import { fetchDayInfo } from "./fetchBirth";
+import { fetchDeathInfo } from "./fetchDeath";
 import "./style.css";
+
+// const Hello = () => {
+//   return (
+//     <div>
+//       <p>Hello</p>
+//     </div>
+//   );
+// };
+
+// ReactDOM.render(<Hello />, document.querySelector("#root"));
+
 const form = createForm({ id: "date-form" });
 form.addEventListener("submit", e => {
   e.preventDefault();
 
-  fetch();
-
-  document.body.appendChild(ul);
-  //.then(console.log);
+  fetchDayInfo();
 });
