@@ -6,3 +6,12 @@ body {
   font-family: verdana;
   background-color: Black;
 }
+button {
+  width: 20%;
+  font-style: bold;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background-color: #008cba;
+}
